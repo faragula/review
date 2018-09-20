@@ -215,12 +215,11 @@ def AnalizujItemy(stringVstupnihoSouboru):
         count = count + 1
     return vyslednyList
 
-try:
-    listItemu = AnalizujItemy('VstupOK/odstranAktualni.txt')
-    for it in listItemu:
-        print(it)
-except:
-    print("urllib.error.HTTPError: HTTP Error 429: Too Many Requests")
+
+listItemu = AnalizujItemy('VstupOK/odstranAktualni.txt')
+for it in listItemu:
+    print(it)
+
 
 
 
